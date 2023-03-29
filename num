@@ -1,0 +1,20 @@
+//Suma de nomina
+#include<stdio.h>
+
+int main(){
+    int SUM=0, i, NUM, N;
+    
+    
+        printf("Pregunta cuantos numeros desea introducir ");
+        scanf("%d", N);
+        for (i=1;i<=N;i++){
+            printf("introduce el numero %d", i);
+            scanf("%d", &NUM);
+    
+        if(NUM>=0){
+        SUM+=NUM;
+        }
+    }
+    printf("El resultado de la suma es : %.d", SUM);
+    return 0;
+}
