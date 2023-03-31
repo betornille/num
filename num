@@ -1,20 +1,26 @@
-//Suma de enteros
-#include<stdio.h>
+//Suma solo enteros
+#include <stdio.h>
 
-int main(){
-    int SUM=0, i, NUM, N;
-    
-    
-        printf("Pregunta cuantos numeros desea introducir ");
-        scanf("%d", N);
-        for (i=1;i<=N;i++){
-            printf("introduce el numero %d", i);
-            scanf("%d", &NUM);
-    
-        if(NUM>=0){
-        SUM+=NUM;
-        }
-    }
-    printf("El resultado de la suma es : %.d", SUM);
-    return 0;
+int main() {
+   int N, i, NUM;
+   int SUM=0;
+
+   printf("Señale la cantidad de números a sumar: ");
+   scanf("%d", &N);
+   
+   while(N<2){
+   printf("Deja de hacerte el chistoso, son DOS números: ");
+   scanf("%d", &N);
+   }
+   
+   for (i=1; i<=N; i++) {
+      printf("Digite su número a sumar %d: ", i);
+      scanf("%d", &NUM);
+      
+        if (NUM>0){
+          SUM+=NUM;
+      }
+   }
+   printf("El resultado de la suma es: %d\n", SUM);
+   return 0;
 }
