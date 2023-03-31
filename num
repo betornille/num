@@ -1,4 +1,4 @@
-//Suma de nomina
+//Suma de enteros
 #include<stdio.h>
 
 int main(){
