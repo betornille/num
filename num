@@ -9,7 +9,7 @@ int main() {
    scanf("%d", &N);
    
    while(N<2){
-   printf("Deja de hacerte el chistoso, son DOS números: ");
+   printf("Deja de hacerte el chistoso, son DOS o más números: ");
    scanf("%d", &N);
    }
    
